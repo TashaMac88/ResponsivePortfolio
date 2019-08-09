@@ -3,7 +3,7 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777777;
-  background: url("../images/concrete_seamless.png");
+  background:grey;
 }
 
 * {
@@ -35,7 +35,7 @@ h2,
 h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
-  color: #4aaaa5;
+  color: blue;
 }
 
 h1 {
@@ -58,7 +58,7 @@ h3 {
   width: 100%;
   margin: 0 0 30px;
   overflow: auto;
-  color: #ffffff;
+  color: black;
   background: #ffffff;
   border-bottom: 2px solid #cccccc;
 }
@@ -74,7 +74,7 @@ h3 {
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-  background: #4aaaa5;
+  background: blue;
 }
 
 nav {
@@ -106,7 +106,7 @@ footer {
   color: #cccccc;
   text-align: center;
   background: #666666;
-  border-top: 8px solid #4aaaa5;
+  border-top: 8px solid blue;
   height: 50px;
 }
 
@@ -164,7 +164,7 @@ h3, h2 {
   line-height: 30px;
   color: #ffffff;
   text-align: center;
-  background: #4aaaa5;
+  background: lightblue;
   border-bottom: 0;
 }
 
@@ -214,4 +214,43 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+/* Media Query at 980 */
+@media only screen and (max-width: 980px) {
+
+  #logo {
+    background: red;
+  }
+
+}
+
+/* Media Query at 768 */
+@media only screen and (max-width: 768px) {
+
+  #logo {
+    background: purple;
+  }
+
+  .wrapper {
+    width: 100%
+    padding:20px
+  }
+
+  #main-contnet,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+/* Media Query at 640 */
+@media only screen and (max-width: 640px) {
+
+  #logo {
+    background:green;
+  }
+
 }
